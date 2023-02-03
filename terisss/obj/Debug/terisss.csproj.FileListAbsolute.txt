@@ -1,0 +1,15 @@
+C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\terisss.csproj.AssemblyReference.cache
+C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\MainWindow.g.cs
+C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\App.g.cs
+C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\terisss_MarkupCompile.cache
+C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\terisss_MarkupCompile.lref
+C:\Users\Пользователь\source\repos\terisss\terisss\bin\Debug\terisss.exe.config
+C:\Users\Пользователь\source\repos\terisss\terisss\bin\Debug\terisss.exe
+C:\Users\Пользователь\source\repos\terisss\terisss\bin\Debug\terisss.pdb
+C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\MainWindow.baml
+C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\terisss.g.resources
+C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\terisss.Properties.Resources.resources
+C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\terisss.csproj.GenerateResource.cache
+C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\terisss.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\terisss.exe
+C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\terisss.pdb
