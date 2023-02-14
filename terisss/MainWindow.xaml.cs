@@ -48,10 +48,12 @@ namespace terisss
         };
 
         private readonly Image[,] imageControls;
-        private readonly int maxDelay = 1000;
-        private int minDelay = 50;
         private readonly int delayDecrement = 25;
-        private int highScore;
+
+        private int maxDelay = 1000;
+        private int minDelay = 50;
+
+        private int md;
 
         private GameState gameState = new GameState();
     
@@ -59,7 +61,6 @@ namespace terisss
         {
             InitializeComponent();
             imageControls = SetupGameCanvas(gameState.PlayGrid);
-            GetHighScore();
         }
 
         private Image[,] SetupGameCanvas(PlayGrid grid)
@@ -100,12 +101,6 @@ namespace terisss
             }
         }
 
-        private void GetHighScore()
-        {
-            StreamReader streamReader = new StreamReader("C:\\Users\\Пользователь\\Desktop\\123.txt");
-            string line = streamReader.ReadLine();
-            highScore = int.Parse(line);
-        }
         private void DrawBlock(Block block)
         {
             foreach(Position p in block.TilePositions())
@@ -132,7 +127,6 @@ namespace terisss
             DrawBlock(gameState.CurrentBlock);
             DrawNextBlock(gameState.BlockQueue);
             ScoreText.Text = $"Score: {gameState.Score}";
-            highScoreText.Text = "High Score: " + highScore;
         }
 
         private async Task GameLoop()
@@ -149,19 +143,9 @@ namespace terisss
 
             GameOverMenu.Visibility = Visibility.Visible;
             FinalScoreText.Text = $"Score: {gameState.Score}";
-            writeScore(gameState.Score);
 
         }
 
-        private void writeScore(int score)
-        {
-            if (score > highScore)
-            {
-                StreamWriter sw = new StreamWriter("C:\\Users\\Пользователь\\Desktop\\123.txt");
-                sw.WriteLine(score.ToString());
-                sw.Close();
-            }
-        }
 
         //Асинхронная, потому что нам нужно ожидать без блокирования интерфейса
         private void Window_KeyDown(object sender, KeyEventArgs e)
@@ -213,7 +197,6 @@ namespace terisss
         {
             gameState = new GameState();
             GameOverMenu.Visibility = Visibility.Hidden;
-            GetHighScore();
             await GameLoop();
         }
 
@@ -221,13 +204,16 @@ namespace terisss
         {
             PauseMenu.Visibility = Visibility.Hidden;
             minDelay = 50;
+            maxDelay = md;
             await GameLoop();
         }
 
         private async void PauseButton_Click(object sender, RoutedEventArgs e)
         {
             PauseMenu.Visibility = Visibility.Visible;
-            minDelay = 999999;
+            minDelay = -1;
+            md = maxDelay;
+            maxDelay = -1;
             await GameLoop();
         }
     }

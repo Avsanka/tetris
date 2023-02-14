@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\
+C:\Users\Пользователь\source\repos\terisss\terisss\obj\Release\
 terisss
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Пользователь\source\repos\terisss\terisss\App.xaml
 11151548125
 
-17-897760365
+18-1975339197
 13-1505183044
 MainWindow.xaml;
 
-False
+True
 

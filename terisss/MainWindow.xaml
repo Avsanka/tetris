@@ -38,13 +38,6 @@
 
         </Viewbox>
 
-        <TextBlock x:Name="highScoreText"
-                   Grid.Row="0"
-                   Grid.Column="0"
-                   Text="High Score: "
-                   Margin="0,10"
-                   TextAlignment="Center"/>
-        
         <TextBlock x:Name="ScoreText"
                    Grid.Row="0"
                    Grid.Column="2"

@@ -13,3 +13,7 @@ C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\terisss
 C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\terisss.csproj.CoreCompileInputs.cache
 C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\terisss.exe
 C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\terisss.pdb
+C:\Users\Пользователь\source\repos\terisss\terisss\bin\Debug\terisss.exe.manifest
+C:\Users\Пользователь\source\repos\terisss\terisss\bin\Debug\terisss.application
+C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\terisss.exe.manifest
+C:\Users\Пользователь\source\repos\terisss\terisss\obj\Debug\terisss.application
